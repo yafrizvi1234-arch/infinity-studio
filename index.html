@@ -1,1 +1,269 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b18">
+<meta name="description" content="Infinity Web Studio creates modern websites, e-commerce stores and custom web applications for businesses worldwide.">
+<title>Infinity Web Studio | Build Your Digital Future</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Arial,sans-serif;
+background:#080b18;
+color:#fff;
+line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1150px;margin:auto}
+header{
+position:sticky;top:0;z-index:100;
+background:rgba(8,11,24,.92);
+backdrop-filter:blur(15px);
+border-bottom:1px solid #202942;
+}
+nav{height:75px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:21px;font-weight:900}
+.logo span{color:#638cff}
+.navlinks{display:flex;gap:24px;font-size:14px;color:#c4cbe0}
+.navlinks a:hover{color:#739bff}
+.menu{display:none;background:none;color:white;border:0;font-size:27px}
+.hero{
+min-height:620px;
+display:flex;align-items:center;
+background:radial-gradient(ellipse at 75% 40%,#192c62 0%,#080b18 55%);
+}
+.hero-content{max-width:750px;padding:90px 0}
+.tag{
+display:inline-block;padding:7px 15px;
+border:1px solid #334b87;border-radius:30px;
+color:#91b2ff;font-size:13px;margin-bottom:25px;
+}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.13;margin-bottom:24px}
+.gradient{
+background:linear-gradient(90deg,#71a0ff,#b18aff);
+-webkit-background-clip:text;color:transparent;
+}
+.hero p{color:#aeb9d0;max-width:600px;font-size:17px;margin-bottom:32px}
+.btn{
+display:inline-block;padding:13px 24px;border-radius:8px;
+background:linear-gradient(90deg,#386dff,#8955ff);
+font-weight:bold;margin:5px;
+transition:.3s;
+}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.15)}
+.btn-outline{border:1px solid #506da9;background:transparent}
+section{padding:90px 0}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{font-size:36px;margin-bottom:10px}
+.section-title p{color:#98a6c2}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+background:linear-gradient(145deg,#111a32,#0c1225);
+border:1px solid #253354;
+border-radius:15px;padding:27px;
+transition:.3s;
+}
+.card:hover{transform:translateY(-6px);border-color:#658aff}
+.card .emoji{font-size:32px;margin-bottom:15px}
+.card h3{font-size:20px;margin-bottom:10px}
+.card p{color:#a6b2cb;font-size:14px}
+.about{
+background:#0c1223;
+}
+.about-content{max-width:800px;margin:auto;text-align:center}
+.about-content p{color:#aeb9d0;margin-top:18px}
+.project{
+min-height:190px;display:flex;flex-direction:column;
+justify-content:space-between;
+}
+.project-label{color:#83a7ff;font-size:12px}
+.project a{color:#91b2ff;margin-top:15px}
+.stats{
+display:grid;grid-template-columns:repeat(3,1fr);
+gap:20px;text-align:center;margin-top:45px
+}
+.stat{padding:25px;border:1px solid #273653;border-radius:12px}
+.stat h3{font-size:30px;color:#82a5ff}
+.stat p{color:#aab5cc;font-size:13px}
+.contact{
+background:radial-gradient(ellipse at center,#182951,#080b18 70%);
+text-align:center;
+}
+.contact p{color:#b0bdd4;margin:15px auto 25px;max-width:550px}
+footer{
+border-top:1px solid #202942;
+padding:28px 0;text-align:center;color:#8997b3;font-size:13px
+}
+@media(max-width:750px){
+.navlinks{
+display:none;position:absolute;top:75px;left:0;
+width:100%;background:#10182c;padding:20px;
+flex-direction:column;gap:15px;
+}
+.navlinks.show{display:flex}
+.menu{display:block}
+.grid{grid-template-columns:1fr}
+.hero{min-height:570px}
+section{padding:65px 0}
+.section-title h2{font-size:29px}
+}
+</style>
+</head>
+
+<body>
+<header>
+<div class="container">
+<nav>
+<a class="logo" href="#home">INFINITY<span> WEB STUDIO</span></a>
+<button class="menu" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+<div class="navlinks" id="navlinks">
+<a href="#home" onclick="closeMenu()">Home</a>
+<a href="#about" onclick="closeMenu()">About</a>
+<a href="#services" onclick="closeMenu()">Services</a>
+<a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container">
+<div class="hero-content">
+<div class="tag">✦ YOUR DIGITAL GROWTH PARTNER</div>
+<h1>Build Your <span class="gradient">Digital Future</span> With Us.</h1>
+<p>We create modern, responsive and user-friendly websites that help businesses build their online presence and grow with confidence.</p>
+<a class="btn" href="#contact">Start Your Project ↗</a>
+<a class="btn btn-outline" href="#portfolio">Explore Projects</a>
+</div>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="container">
+<div class="about-content">
+<div class="section-title">
+<h2>About <span class="gradient">Infinity</span></h2>
+</div>
+<p>Infinity Web Studio is a digital development studio focused on creating professional websites and web experiences for businesses and individuals worldwide.</p>
+<p>Our goal is to combine thoughtful design, useful functionality and responsive development to help every project stand out online.</p>
+<div class="stats">
+<div class="stat"><h3>01</h3><p>Creative Design</p></div>
+<div class="stat"><h3>24/7</h3><p>Online Presence</p></div>
+<div class="stat"><h3>100%</h3><p>Project Focus</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-title">
+<h2>Our <span class="gradient">Services</span></h2>
+<p>Digital solutions for your business.</p>
+</div>
+<div class="grid">
+<div class="card">
+<div class="emoji">🌐</div>
+<h3>Business Websites</h3>
+<p>Professional websites to present your company, services and brand online.</p>
+</div>
+<div class="card">
+<div class="emoji">🛒</div>
+<h3>E-Commerce</h3>
+<p>Online stores with product pages, shopping experiences and useful features.</p>
+</div>
+<div class="card">
+<div class="emoji">📱</div>
+<h3>Responsive Design</h3>
+<p>Websites designed to work smoothly across mobile phones, tablets and computers.</p>
+</div>
+<div class="card">
+<div class="emoji">🎓</div>
+<h3>School Websites</h3>
+<p>Modern websites for schools, educational institutions and learning communities.</p>
+</div>
+<div class="card">
+<div class="emoji">⚙️</div>
+<h3>Web Applications</h3>
+<p>Custom web applications designed around your business needs and workflows.</p>
+</div>
+<div class="card">
+<div class="emoji">✨</div>
+<h3>Website Redesign</h3>
+<p>Refresh an existing website with a cleaner design and better usability.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="portfolio" class="about">
+<div class="container">
+<div class="section-title">
+<h2>Our <span class="gradient">Portfolio</span></h2>
+<p>Explore our sample project concepts.</p>
+</div>
+<div class="grid">
+<div class="card project">
+<div>
+<div class="project-label">DEMO CONCEPT 01</div>
+<h3>Business Website</h3>
+<p>A sample concept for a modern business website.</p>
+</div>
+<span>🏢</span>
+</div>
+<div class="card project">
+<div>
+<div class="project-label">DEMO CONCEPT 02</div>
+<h3>Restaurant Website</h3>
+<p>A sample restaurant website with menu and contact sections.</p>
+</div>
+<span>🍽️</span>
+</div>
+<div class="card project">
+<div>
+<div class="project-label">DEMO CONCEPT 03</div>
+<h3>Online Store</h3>
+<p>A sample e-commerce storefront concept.</p>
+</div>
+<span>🛍️</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+<div class="section-title">
+<h2>Let's Build Something <span class="gradient">Great</span></h2>
+</div>
+<p>Have a website idea or business project? Contact us to discuss your requirements and get started.</p>
+<a class="btn" href="mailto:YOUR_EMAIL@example.com">Email Us ↗</a>
+<a class="btn btn-outline" href="https://wa.me/YOUR_NUMBER">WhatsApp ↗</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<p>© <span id="year"></span> Infinity Web Studio. All Rights Reserved.</p>
+<p>Designed with care for the digital world.</p>
+</div>
+</footer>
+
+<script>
+function toggleMenu(){
+document.getElementById('navlinks').classList.toggle('show');
+}
+function closeMenu(){
+document.getElementById('navlinks').classList.remove('show');
+}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
